@@ -1,0 +1,395 @@
+/* 轮播图 */
+
+.slider {
+    height: 500px;
+    position: relative;
+    width: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+img.active {
+    opacity: 1;
+}
+
+.slider ul {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -24px;
+    z-index: 999;
+}
+
+.slider ul li {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border: 1px solid #333;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+li.active {
+    background-color: rgb(24, 23, 23);
+}
+
+main {
+    clear: both;
+    width: 100%;
+    background-color: #fff;
+}
+
+.box {
+    width: 1200px;
+    padding: 144px 74px 96px 0;
+}
+
+.content_one {
+    width: 1126px;
+    height: 470px;
+    border: 1px solid #850913;
+    position: relative;
+}
+
+.content_one img {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 560px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.content_one:hover .d {
+    transform: translate(40px, -40px);
+}
+
+.content_one fieldset {
+    position: absolute;
+    top: -24px;
+    right: 106px;
+    width: 214px;
+    padding: 0 20px;
+    text-align: center;
+    border: 1px solid #86090f;
+    background-color: #fff;
+}
+
+fieldset :first-child {
+    font-size: 24px;
+    color: #333;
+    position: relative;
+    ;
+    top: -18px;
+    background-color: #fff;
+}
+
+fieldset :last-child {
+    position: relative;
+    top: -12px;
+}
+
+.content_one div {
+    width: 680px;
+    position: absolute;
+    right: -74px;
+    top: 66px;
+    background-color: #999999;
+    padding: 34px 16px 34px 102px;
+}
+
+.content_one div p {
+    width: 100%;
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+    margin-top: 28px;
+}
+
+.content_one div h3 {
+    font-size: 18px;
+    padding: 12px 0;
+    overflow: hidden;
+}
+
+.content_one div h3 a {
+    font-size: 14px;
+    color: #fff;
+    float: right;
+}
+
+.content_one hr::before {
+    content: ">";
+    position: absolute;
+    top: 71px;
+    left: 96px;
+    color: #fff;
+}
+
+/* 拍摄基地部分 */
+
+.shooting-base {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: url(../imgs/slider1.png) no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.title span {
+    font-size: 24px;
+    line-height: 100px;
+}
+
+.title-line {
+    position: absolute;
+    width: 120px;
+    top: 84px;
+    left: 50%;
+    margin-left: -60px;
+    border: 0.5px solid #850913;
+}
+
+/* 拍摄基地图片呈现部分 */
+
+.shooting-picture {
+    height: 480px;
+    width: 1200px;
+    position: absolute;
+    top: 160px;
+    left: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.shooting {
+    width: 280px;
+    height: 520px;
+    position: relative;
+    vertical-align: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+    float: left;
+}
+
+.shooting img {
+    width: 262px;
+    height: 80%;
+    transition: all 1s;
+}
+
+.shooting h4 {
+    display: inline-block;
+    width: 166px;
+    font-size: 16px;
+    line-height: 40px;
+    color: black;
+}
+
+.shooting p {
+    display: inline-block;
+    width: 166px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #817f80;
+}
+
+.shooting:hover .zoom {
+    height: 100%;
+    width: 280px;
+}
+
+.shooting:hover .Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.shooting:hover .subtitle {
+    position: absolute;
+    top: 50%;
+    color: #850913;
+    left: 50%;
+    margin-left: -83px;
+    font-weight: 600;
+}
+
+.shooting:hover .txt {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-left: -83px;
+    color: white;
+}
+
+.reading {
+    width: 100%;
+    text-align: center;
+    margin: 48px auto;
+}
+
+.reading a {
+    color: white;
+    padding: 14px 36px;
+    display: inline-block;
+    font-size: 12px;
+    background-color: #a20a09;
+}
+
+/* 真是客照 */
+
+.real-gust-banner {
+    width: 100%;
+}
+
+.real-gust {
+    width: 1200px;
+    background-color: #a20a09;
+    overflow: hidden;
+}
+
+.rit-img {
+    float: left;
+    width: 430px;
+}
+
+.rit {
+    position: relative;
+    width: 664px;
+    padding-right: 40px;
+    float: right;
+    color: #fff;
+}
+
+.rit-title {
+    font-size: 16px;
+    line-height: 38px;
+    margin-top: 38px;
+}
+
+.rit-p {
+    font-size: 12px;
+    line-height: 22px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    word-break: break-all;
+}
+
+.rit>a {
+    display: inline-block;
+    padding: 4px 4px;
+    font-size: 12px;
+    color: #a20a09;
+    background-color: #fff;
+}
+
+/*选择摄影 Choose photography*/
+
+.Choose-photo {
+    width: 100%;
+    background: url(../imgs/slider1.png) no-repeat;
+    background-size: cover;
+}
+
+.Choose-photo-box {
+    padding-top: 10px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.Choose>img {
+    vertical-align: middle;
+}
+
+.Choose-picture {
+    width: 1200px;
+    display: flex;
+}
+
+.Choose {
+    width: 262px;
+    float: left;
+    vertical-align: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+
+.Choose>div {}
+
+p.name {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: #343434;
+    text-align: left;
+}
+
+p.en_name {
+    width: 100%;
+    /* font-size: 14px; */
+    font-size: 12px;
+    line-height: 22px;
+    color: #676767;
+    text-align: left;
+}
+
+p.intro {
+    width: 100%;
+    height: 100px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 22px;
+    color: #9a9a9a;
+}
+
+p.act {
+    color: #fff;
+    background-color: #830a13;
+}
+
+.Choose:hover .active>p {
+    color: #fff;
+    background-color: #830a13;
+}
+
+.Choose:hover .active {
+    height: 100px;
+}
+
+hr.line::before {
+    content: ">";
+    position: absolute;
+    top: 65px;
+    left: -6px;
+    color: #fff;
+}

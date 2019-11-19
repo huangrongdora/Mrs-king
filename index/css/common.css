@@ -1,0 +1,71 @@
+header {
+    width: 1200px;
+}
+
+header>a {
+    width: 151px;
+    cursor: pointer;
+}
+
+header>a>img {
+    vertical-align: top;
+}
+
+header>div {
+    float: right;
+}
+
+header li {
+    height: 100%;
+    display: inline-block;
+}
+
+header li>a {
+    display: inline-block;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 18px;
+    color: black;
+}
+
+header li:hover {
+    border-bottom: 4px solid #830a13;
+}
+
+header>div>div {
+    text-align: right;
+    vertical-align: text-bottom;
+    padding-top: 14px;
+}
+
+header>div>div>input {
+    width: 220px;
+    font-size: 10px;
+    line-height: 20px;
+    vertical-align: center;
+    border: 1px solid #333333;
+    border-radius: 12px;
+    padding-left: 10px;
+    background: url(../imgs/search.png) no-repeat;
+    background-position: 200px center;
+}
+
+header>div>div>button {
+    background-color: #fff;
+    font-size: 18px;
+}
+input,button{
+    border:none;
+    outline:none;
+}
+footer {
+    /* position: fixed;
+    bottom: 0; */
+    clear: both;
+    width: 100%;
+    line-height: 90PX;
+    background-color: #666;
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+}
